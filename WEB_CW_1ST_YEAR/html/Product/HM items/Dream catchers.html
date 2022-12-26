@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Fredoka+One&family=Henny+Penny&family=Lobster&family=Monoton&family=Righteous&family=Russo+One&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="../../../css/Price.css">
+    <!-- Nav and Footer.css -->
+    <link rel="stylesheet" href="../../../css/nav_footer.css">
+    <!-- Style Sheet 2 -->
+    <link rel="stylesheet" href="../../../css/img_Sld.css">
+    <link rel="icon" type="image/x-icon" href="../../../images/lg.ico" />
+    <title>Dream Catchers</title>
+</head>
+<body id="DC">
+
+    <!-- Top Nav bar ------------------------------------------------------------------------>
+    <div id="topBar">
+        <nav id="topNav1">
+            <ul id="topUl1">
+                <li class="topLi1"><a href="../../Home.html" class="topA" id="ho"><i class="fa fa-home" id="i1"></i>Home</a></li>
+                <li class="topLi1"><a href="../../Site Map.html" class="topA" id="sm"><i class="fa fa-sitemap" id="i2"></i>Site Map</a></li>
+                <li class="topLi1"><a href="../../form.html" class="topA" id="cu"><i class="fa fa-phone" id="i3"></i>Contact Us</a></li>
+                <li class="topLi1"><a href="../../Student pages/StudentDetails.html" class="topA" id="au"><i class="fa fa-users" id="i4"></i>About Us</a></li>
+                <li class="topLi1"><a href="../../exploreisland.html" class="topA" id="tp"><i class="fa fa-map" id="i5"></i>Tour Map</a></li>
+                <li class="topLi1"><a href="../../sign_in_page.html" class="topA" id="si"><i class="fa fa-sign-in" id="i60"></i>Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Logo ------------------------------------------------------------------------------->
+    <a href="../../Home.html">
+    <img src="../../../images/logo.jpg" alt="log" class="logo" a>
+    </a><br><br>
+
+    <!-- buy -------------------------------------------------------------------------------->
+    <div class="main-box" id="main-box">
+        <input type="radio" name="navige" id="mask1" class="rebtn-forMask">
+        <input type="radio" name="navige" id="mask2" class="rebtn-forMask">
+        <input type="radio" name="navige" id="mask3" class="rebtn-forMask">
+        <div id="sld-imgs">
+            <div class="slider">
+                <img src="../../../images/buy/product/blu-dc.jpg" alt="blu-mask">
+                <img src="../../../images/buy/product/yell-dc.jpg" alt="black-mask">
+                <img src="../../../images/buy/product/red-dc.jpg" alt="red-mask">
+            </div>
+            <div  class="sld-btns">
+                <label for="mask1"></label>
+                <label for="mask2"></label>
+                <label for="mask3"></label>
+            </div>
+        </div>    
+        
+        <div id="for-dit">
+            <h1>Dream Catchers</h1><br><br>
+
+            <p>We have three types of handmade Sri Lankan Dream Catchers you can buy as many of each as you like</p>
+            <h2>The Price Of One Is $20</h2>
+            <br>
+            <h2><u>Fill out the form below to purchase</u></h2>
+            <br><br>
+
+            <form action="pin-index.php" name="frm-pin" method="post" id="DCForm">
+                <ul>
+                    <li>
+                        <div id="nameDiv">
+                            <input type="text" name="username" id="username">
+                            <label for="username">User Name</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="emailDiv">
+                            <input type="email" name="email" id="email">
+                            <label for="email" id="emailLable">E-mail</label>
+                        </div>
+                    </li>    
+                </ul><br><br>
+                
+                <ul>
+                    <li>
+                        <div id="contactNumDiv">
+                            <input type="tel" name="tel" id="tel">
+                            <label for="contactNum" id="contactNum">Contact Number</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="couponDiv">
+                            <input type="text" name="text" id="coupon" size="8">
+                            <label for="forcoupon" id="couponnumb">Coupon Number</label>
+                        </div>
+                    </li>
+                </ul><br><br>
+
+                <ul>
+                    <li>
+                        <div id="bankcardDiv">
+                            <input type="tel" name="tel" id="bcard" size="16" placeholder="  **** - **** - **** - ****">
+                            <label for="forBankCard" id="bankCard">Bank Card Number</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="CardMonthAndDateDiv">
+                            <input type="text" name="tel" id="MandD" size="5" placeholder="MM / YY">
+                            <label for="forMandD" id="CardMonthAndDate">M & Y</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="pinDiv">
+                            <input type="tel" name="tel" id="pin" size="3" placeholder="***">
+                            <label for="forpin" id="pinNubm">Pin</label>
+                        </div>
+                    </li>
+                </ul><br><br>
+
+                <div id="addDiv">
+                    <textarea name="add" id="addre" cols="30" rows="10"></textarea>
+                    <label for="foradd" id="address">Address</label>
+                </div><br><br>
+
+                <label for="mktpye" class="mktp" id="mktp">Mask Type : </label>
+
+                <label for="mktpye" class="mktype" id="mkblue">Blue </label>
+                <input type="checkbox" name="masktype" id="blue" onclick="happen1()" >
+
+                <label for="mktpye" class="mktype" id="mkblack">Yellow </label>
+                <input type="checkbox" name="masktype" id="black" onclick="happen2()">
+
+                <label for="mktpye" class="mktype" id="mkred">Red </label>
+                <input type="checkbox" name="masktype" id="red" onclick="happen3()">
+                <br><br>	
+                
+                <label for="quantity" class="q-t">Quantity : </label>
+	            <input type="number" class="quantity" name="quantity" id="quantity1" value="0" max="0" min="0" step="0" onchange="calculateAmount1(this.value)" required disabled>
+                <input type="number" class="quantity" name="quantity" id="quantity2" value="0" max="0" min="0" step="0" onchange="calculateAmount2(this.value)" required disabled>
+                <input type="number" class="quantity" name="quantity" id="quantity3" value="0" max="0" min="0" step="0" onchange="calculateAmount3(this.value)" required disabled>
+                <br><br>
+                <label for="total" class="q-t">Price : </label>
+                <input type="text" value="" class="tot-amo" name="tot-amount" id="tot-amount1" placeholder=" $ 0" readonly>
+                <input type="text" value="" class="tot-amo" name="tot-amount" id="tot-amount2" placeholder=" $ 0" readonly>
+                <input type="text" value="" class="tot-amo" name="tot-amount" id="tot-amount3" placeholder=" $ 0" readonly>
+                <br><br><br>
+                <label for="total" class="q-t">Total Price : $</label>
+                <input type="text" value="" class="tot-amo" name="tot-amount" id="tot-amount" placeholder=" $ 0" onchange="totalAmountCalculate(this.value)" readonly>
+                <br><br>
+
+                <button type="reset" class="btn1">Reset</button>
+                <button type="button" class="btn2" onclick="ebuwahama()">Submit</button>
+              
+            </form>
+
+        </div> 
+
+    </div><br><br>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <img src="../../../images/buy/product/cart-removebg-preview.png" alt="cart img">
+        <h2>THANK YOU !!</h2>
+        <p>Thanks for your purchase.<br>You can see your Invoice Details</p>
+        <hr>
+        <div class="inner">
+            <p id="inner_name"></p>
+            <p id="inner_email"></p>
+            <p id="inner_phone"></p>
+            <p id="inner_address"></p>
+            <br>
+            <hr width="200px">
+            <br>
+            <p id="inner_quantity1"></p>
+            <p id="inner_price1"></p>
+            <br>
+            <p id="inner_quantity2"></p>
+            <p id="inner_price2"></p>
+            <br>
+            <p id="inner_quantity3"></p>
+            <p id="inner_price3"></p>
+            <br>
+            <p id="inner_price"></p>
+            <p id="inner_Off"></p>
+            <p id="inner_total_price"></p>
+        </div>
+
+        <button type="submit" onclick="forOk()">OK</button>
+    </div>
+
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="contact"> 
+             <br>
+             Need Help?<br>Call Us : 0113465678<br><br>
+             Our Email Address:Ceylondreamtour@gmail.com<br>
+       </div>
+       <div class="down">
+           <br>
+           <label for="email">Get updates directly to your inbox:</label>
+            <input type='email' id='email_do' placeholder="Enter you email">
+            <button type="submit" onclick="foo()">Sign Up</button>
+      </div>
+      <div class="down_link"> 
+           <br> 
+           &copy; 2022 Ceylon Dream Tour Servise.ALL RIGHTS RESERVED.<br><br>
+           <a href="../../Student pages/st1.html" class="bottom-links">Page creator&nbsp;|&nbsp;</a>
+           <a href="../../Site Map.html" class="bottom-links">Sitemap&nbsp;|&nbsp;</a>
+           <a href="#" class="bottom-links">Privacy Policy&nbsp;|&nbsp;</a>
+           <a href="#" class="bottom-links">Terms and Conditions</a>
+           <br><br>
+       </div>
+   </div>
+
+
+   <!-- Footer JS -->
+   <script src="../../../JS/footer.js"></script>
+   <!-- For Calculations -->
+   <script src="../../../JS/Dream-ca.js"></script>
+</body>
+</html>

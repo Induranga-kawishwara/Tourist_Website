@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel = "stylesheet" href="../css/Quiz.css">
+	<link rel = "stylesheet" href="../css/nav_footer.css">
+	<link rel="icon" type="image/x-icon" href="../images/lg.ico" />
+    <title>Quiz</title>
+</head>
+
+<body id = "main" class="main">
+
+	<!-- Top Nav bar ------------------------------------------------------------------------>
+	<div id="topBar">
+        <nav id="topNav1">
+            <ul id="topUl1">
+                <li class="topLi1"><a href="buy.html" class="topA" id="ho"><i class="fa fa-shopping-cart" id="i1"></i>Products</a></li>
+                <li class="topLi1"><a href="Site Map.html" class="topA" id="sm"><i class="fa fa-sitemap" id="i2"></i>Site Map</a></li>
+                <li class="topLi1"><a href="form.html" class="topA" id="cu"><i class="fa fa-phone" id="i3"></i>Contact Us</a></li>
+                <li class="topLi1"><a href="Student pages/StudentDetails.html" class="topA" id="au"><i class="fa fa-users" id="i4"></i>About Us</a></li>
+                <li class="topLi1"><a href="exploreisland.html" class="topA" id="tp"><i class="fa fa-map" id="i5"></i>Tour Map</a></li>
+                <li class="topLi1"><a href="sign_in_page.html" class="topA" id="si"><i class="fa fa-sign-in" id="i60"></i>Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Logo ------------------------------------------------------------------------------->
+    <a href="Home.html">
+    <img src="../images/logo.jpg" alt="log" class="logo" id="img-logo-quz">
+    </a>
+
+
+
+	
+    <h1>Quiz</h1>
+
+		<!--Button to start the quiz-->
+
+		<div class = "start">
+
+			<button>Start!</button>
+
+		</div>
+
+		<!--Quiz Description-->
+
+		<div class = "description">
+
+			<div class= "descriptionTitle">
+
+				Before you start...
+
+			</div>
+
+			<div class="descriptionDetails">
+
+				<ul>
+					<li>In this quiz you will get 10 general questions related to tourism. </li>
+					<li>You have to complete it within <b>ONE minute.</b></li>
+					<li>You will get <b>2 marks</b> for each correct answer, and <b>-1 mark</b> for each wrong answer.</li>
+					<li>You results will be displayed at the end. </li>
+					
+				</ul>
+				
+			</div>
+
+			<div class="buttons">
+
+				<button class = "exit">Quit</button>
+				<button class= "continue">Continue</button>
+
+			</div>
+
+		</div>
+
+		<!--Quiz Box-->
+
+		<div class = "quizBox">
+				
+			<header>
+
+				<div class="title">Quick Quiz</div>
+
+				<div class = "timer">
+
+					<div class = "timerText">Time left</div>
+					<div class = "seconds"></div>
+
+				</div>
+
+			</header>
+
+			<section>
+
+				<form name = "quiz" method="post">
+
+					<div class="question">
+
+						<p id="#top">1. What is the longest river in the world?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question1" value = "-1"> Nile</p>			
+						
+						<p><input class="correct" type="radio" name = "question1" value = "2"> Amazon</p>			
+						
+						<p><input class="wrong" type="radio" name = "question1" value = "-1"> Mississippi</p>
+						
+						<p><input class="wrong" type="radio" name = "question1" value = "-1"> Congo</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>2. What is Europe’s most mountainous country?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question2" value = "-1"> Switzerland</p>			
+						
+						<p><input class="correct" type="radio" name = "question2" value = "2"> Russia</p>			
+						
+						<p><input class="wrong" type="radio" name = "question2" value = "-1"> Norway</p>
+						
+						<p><input class="wrong" type="radio" name = "question2" value = "-1"> Denmark</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>3. Which country has the world’s highest waterfall?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="correct" type="radio" name = "question3" value = "2"> Venezuela</p>			
+						
+						<p><input class="wrong" type="radio" name = "question3" value = "-1"> Peru</p>			
+						
+						<p><input class="wrong" type="radio" name = "question3" value = "-1"> Norway</p>
+						
+						<p><input class="wrong" type="radio" name = "question3" value = "-1"> United States</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>4. What is the largest country in Africa?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question4" value = "-1"> South Africa</p>			
+						
+						<p><input class="wrong" type="radio" name = "question4" value = "-1"> Sudan</p>			
+						
+						<p><input class="correct" type="radio" name = "question4" value = "2"> Algeria</p>
+						
+						<p><input class="wrong" type="radio" name = "question4" value = "-1"> Kenya</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>5. What is the deepest lake in the world?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question5" value = "-1"> Lake Matano, Indonesia</p>			
+						
+						<p><input class="wrong" type="radio" name = "question5" value = "-1"> Issyk-Kul or Lake Ysyk, Kyrgyzstan</p>			
+						
+						<p><input class="correct" type="radio" name = "question5" value = "2"> Lake Baikal, Russia</p>
+						
+						<p><input class="wrong" type="radio" name = "question5" value = "-1"> Lake Vostok, Antarctic</p>
+
+					</div>
+					<div class="question">
+
+						<p>6. Which Caribbean Island is known as the Island of Spice?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="correct" type="radio" name = "question6" value = "2"> Grenada</p>			
+						
+						<p><input class="wrong" type="radio" name = "question6" value = "-1"> The Bahamas</p>			
+						
+						<p><input class="wrong" type="radio" name = "question6" value = "-1"> Haiti</p>
+						
+						<p><input class="wrong" type="radio" name = "question6" value = "-1"> Cuba</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>7. Which European country has the most World Heritage sites?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question7" value = "-1"> Germany</p>			
+						
+						<p><input class="wrong" type="radio" name = "question7" value = "-1"> France</p>			
+						
+						<p><input class="correct" type="radio" name = "question7" value = "2"> Italy</p>
+						
+						<p><input class="wrong" type="radio" name = "question7" value = "-1"> United Kingdom</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>8. What flightless bird is the native symbol of New Zealand?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question8" value = "-1"> Emus</p>			
+						
+						<p><input class="wrong" type="radio" name = "question8" value = "-1"> Elephant Bird</p>			
+						
+						<p><input class="wrong" type="radio" name = "question8" value = "-1"> Ostrich</p>
+						
+						<p><input class="correct" type="radio" name = "question8" value = "2"> Kiwi</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>9. In which country would you find the currency ‘baht’?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question9" value = "-1"> India</p>			
+						
+						<p><input class="correct" type="radio" name = "question9" value = "2"> Thailand</p>			
+						
+						<p><input class="wrong" type="radio" name = "question9" value = "-1"> Bangladesh</p>
+						
+						<p><input class="wrong" type="radio" name = "question9" value = "-1"> Cuba</p>
+
+					</div>
+
+					<div class="question">
+
+						<p>10. What is the largest country in South America?</p>
+
+					</div>				
+				
+					<div class="options">
+
+						<p><input class="wrong" type="radio" name = "question10" value = "-1"> Argentina</p>			
+						
+						<p><input class="correct" type="radio" name = "question10" value = "2"> Brazil</p>			
+						
+						<p><input class="wrong" type="radio" name = "question10" value = "-1"> Bolivia</p>
+						
+						<p><input class="wrong" type="radio" name = "question10" value = "-1"> Colombia</p>
+
+					</div>
+
+				</form>
+				
+			</section>
+
+			<footer>
+				<div class="blank"></div>
+				<input class = "submit" type="button" name="submit" value="Submit" onclick="getRadioValues(); timeStop();">
+				
+			</footer>
+
+
+		</div>	
+
+		<!--Results-->
+
+		<div class="resultBox">
+
+			<div class="complete">Results Summary!</div>
+			<div class="score">
+				<pre><span>Your score : <P id="inner_score">0</P> out of 20.</span></pre>
+			</div>
+
+			
+			<div class="correctORincorrect">
+
+				<div class="correctScore">
+					<p id="inner_correct"></p>
+				</div>
+		
+				<div class="incorrectScore">
+					<p id="inner_incorrect"></p>
+				</div>
+
+				<div class="notAnswered">
+					<p id="notAnswered"></p>
+				</div>
+
+			</div>
+
+			<div class="buttons">
+				<button class="results">Correct Answers</button>
+				<button class="quit">Quit</button>
+			</div>
+			
+		</div>
+
+		<!--Answer Box-->
+
+		<div class="answerBox">
+
+			<div class="answers">
+				<div class="answer1">Answer for question 1 - <span>The Amazon</span></div>
+				<div class="answer2">Answer for question 2 - <span>Russia</span></div>
+				<div class="answer3">Answer for question 3 - <span>Venezuela</span></div>
+				<div class="answer4">Answer for question 4 - <span>Algeria</span></div>
+				<div class="answer5">Answer for question 5 - <span>Lake Baikal</span></div>
+				<div class="answer6">Answer for question 6 - <span>Grenada</span></div>
+				<div class="answer7">Answer for question 7 - <span>Italy</span></div>
+				<div class="answer8">Answer for question 8 - <span>Kiwi</span></div>
+				<div class="answer9">Answer for question 9 - <span>Thailand</span></div>
+				<div class="answer10">Answer for question 10 - <span>Brazil</span></div>
+			</div>
+
+			<div class="buttons">
+				<button class="quit">Quit</button>
+			</div>
+
+		</div>
+
+	<!--Footer-->
+	<div class="footer">
+		<div class="contact"> 
+			 <br>
+			 Need Help?<br>Call Us : 0113465678<br><br>
+			 Our Email Address:Ceylondreamtour@gmail.com<br>
+	    </div>
+	    <div class="down">
+		   <br>
+		   <label for="email">Get updates directly to your inbox:</label>
+			<input type='email' id='email_do' placeholder="Enter you email">
+			<button type="submit" onclick="foo()">Sign Up</button>
+	    </div>
+	    <div class="down_link"> 
+		   <br> 
+		   &copy; 2022 Ceylon Dream Tour Servise.ALL RIGHTS RESERVED.<br><br>
+		   <a href="Student pages/st3.html" class="bottom-links"> Page creator&nbsp;|&nbsp;</a>
+		   <a href="Site Map.html" class="bottom-links">Sitemap&nbsp;|&nbsp;</a>
+		   <a href="#" class="bottom-links"> Privacy Policy&nbsp;|&nbsp;</a>
+		   <a href="#" class="bottom-links"> Terms and Conditions</a>
+		   <br><br>
+	    </div>
+    </div>
+    
+    <script src="../JS/Quiz.js"></script>
+    <script src="../JS/footer.js"></script>
+
+</body>
+</html>

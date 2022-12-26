@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+::selection{
+    background-color: #f4b36d;
+    color: #321760;
+}
+#topBar{
+    top: 0;
+    left: 0;
+}
+#topNav1{
+    background: linear-gradient(90deg, rgba(255,46,0,1) 0%, rgba(255,141,0,1) 50%, rgba(255,244,0,1) 100%);
+}
+/*back ground image*/
+body{
+    position: relative;
+    background-image: url("../images/coutact-us/Sigiriya-Frescoes.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 170px;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+/*create main box*/
+.main{
+    background-color: #ffffffc2;
+    width: 60%;
+    min-width: 420px;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    border-radius: 30px;
+    box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
+    visibility: visible;
+}
+.new_main{
+    visibility: hidden;
+}
+/*design heading*/
+h1{
+    font-family: 'Lobster', 'cursive';
+    font-size: 30px;
+    text-align: center;
+}
+/*design paragraph*/
+.main p{
+    font-size: 16px;
+    position: relative;
+    margin-top:2% ;
+    width: 100%;
+    text-align: center;
+    color: #323232;
+    font-weight: 400;
+}
+
+/*design form*/
+form{
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+}
+label{
+    color: #321760;
+    font-size: 14px;
+}
+#subject{
+    margin-top: 5px;
+}
+select{
+    position: relative;
+    width: 105%;
+    padding: 8px 10px;
+    border-radius: 30px;
+    background-color: #938f8fc8;
+}
+option:checked{
+    background-color: #f6d191;
+    font-weight: bold;
+    font-style: italic;
+}   
+textarea,
+.element input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 30px;
+    border: 1.2px solid #e0d4c4;
+    margin-top: 5px;
+}
+textarea{
+    resize: none;
+}
+
+select:focus,
+textarea:focus,
+.element input:focus{
+    outline: none;
+    border-color: #f4c36d;
+}
+/*design button*/
+.element button{
+    position: relative;
+    border: none;
+    padding: 10px 20px;
+    background: linear-gradient(
+        130deg,
+        #f4b36d,
+        #f57d46
+    );
+    color: #ffffff;
+    border-radius: 20px;
+    bottom: 3px;
+}
+/*design icons*/
+ion-icon {
+    position: relative;
+    font-size:25px;
+    padding: 10px 20px;
+    bottom: 3px;
+    float: right;    
+ }
+.fb,
+.twi{
+    color: rgb(7, 78, 241);
+}
+.you{
+    color: red;
+}
+.wh{
+    color: #0dee0df0;
+}
+.ins{
+    color: #e911b7;
+}
+@media(max-width:800px){
+    .element .twi,.ins{
+        display: none;
+    }
+}
+.footer{
+    bottom: 0;
+}
+/*design popup window*/
+.popup{
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4ms;
+}
+.new_pop{
+    top: 40%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.popup img{
+    width: 100px;
+    height: 100px;
+    margin: -50px;
+}
+.popup h2{
+    font-size: 30px;
+    margin: 70px;  
+}
+.popup p{
+    position: relative;
+    bottom: 10%;
+}
+.popup button{
+    position: relative;
+    margin: 30px 0;
+    padding: 4px 17px;
+    border-radius: 20px;
+    background-color: #f57d46;
+
+}
+.popup hr{
+    position: relative;
+    bottom: 8%;
+}
+.inner p{
+    position: relative;
+    text-align: left;
+    
+}
+button:hover{
+    box-shadow:  0 8px 50px 0 #f57d46 inset, 0 8px 50px 0 #f57d46,0 8px 50px 0 #f57d46 inset, 0 8px 50px 0 #f57d46;
+
+}
+.down_link a{
+    color: #f57d46;
+}
+.topA:hover{
+    color: #f57d46;
+}

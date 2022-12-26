@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Fredoka+One&family=Henny+Penny&family=Lobster&family=Monoton&family=Righteous&family=Russo+One&family=Titan+One&display=swap" rel="stylesheet">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="../../../css/Price.css">
+        <!-- Style Sheet 2 -->
+        <link rel="stylesheet" href="../../../css/ex price.css">
+        <!-- Nav and Footer.css -->
+        <link rel="stylesheet" href="../../../css/nav_footer.css">
+        <link rel="icon" type="image/x-icon" href="../../../images/lg.ico" />
+        <title>31st Night</title>
+    </head>
+    <body>
+
+        <!-- Top Nav bar ------------------------------------------------------------------------>
+        <div id="topBar">
+            <nav id="topNav1">
+                <ul id="topUl1">
+                    <li class="topLi1"><a href="../../Home.html" class="topA" id="ho"><i class="fa fa-home" id="i1"></i>Home</a></li>
+                    <li class="topLi1"><a href="../../Site Map.html" class="topA" id="sm"><i class="fa fa-sitemap" id="i2"></i>Site Map</a></li>
+                    <li class="topLi1"><a href="../../form.html" class="topA" id="cu"><i class="fa fa-phone" id="i3"></i>Contact Us</a></li>
+                    <li class="topLi1"><a href="../../Student pages/StudentDetails.html" class="topA" id="au"><i class="fa fa-users" id="i4"></i>About Us</a></li>
+                    <li class="topLi1"><a href="../../exploreisland.html" class="topA" id="tp"><i class="fa fa-map" id="i5"></i>Tour Map</a></li>
+                    <li class="topLi1"><a href="../../sign_in_page.html" class="topA" id="si"><i class="fa fa-sign-in" id="i60"></i>Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Logo ------------------------------------------------------------------------------->
+        <a href="../../Home.html">
+        <img src="../../../images/logo.jpg" alt="log" class="logo" a>
+        </a><br><br>
+
+        <!-- buy -------------------------------------------------------------------------------->
+        <div class="main-box" id="main-ticket">
+            <div id="for-img">
+                <img src="../../../images/buy/Tours/shan-31.jpg" alt="98">
+            <p>For this event, the order will be delivered your ticket to your home and you have to make your own travel arrangements.</p>
+            </div> 
+
+            <div id="for-dit">
+                <h1>31st Night</h1>
+                <h2>Person = $200 with 50% Discount</h2>
+                <input type="number" value="500" id="price" hidden>
+                <p id="impo"></p>
+                <h2><u>Fill out the form below to purchase</u></h2>
+                <br><br>
+
+                <form action="pin-index.php" name="frm-pin" method="post">
+                    <ul>
+                        <li>
+                            <div id="nameDiv">
+                                <input type="text" name="username" id="username">
+                                <label for="username">User Name</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="emailDiv">
+                                <input type="email" name="email" id="email">
+                                <label for="email" id="emailLable">E-mail</label>
+                            </div>
+                        </li>    
+                    </ul><br><br>
+                    
+                    <ul>
+                        <li>
+                            <div id="contactNumDiv">
+                                <input type="tel" name="tel" id="tel">
+                                <label for="contactNum" id="contactNum">Contact Number</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="couponDiv">
+                                <input type="text" name="text" id="coupon" size="8">
+                                <label for="forcoupon" id="couponnumb">Coupon Number</label>
+                            </div>
+                        </li>
+                    </ul><br><br>
+
+                    <ul>
+                        <li>
+                            <div id="bankcardDiv">
+                                <input type="tel" name="tel" id="bcard" size="16" placeholder="  **** - **** - **** - ****">
+                                <label for="forBankCard" id="bankCard">Bank Card Number</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="CardMonthAndDateDiv">
+                                <input type="text" name="tel" id="MandD" size="5" placeholder="MM / YY">
+                                <label for="forMandD" id="CardMonthAndDate">M & Y</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="pinDiv">
+                                <input type="tel" name="tel" id="pin" size="3" placeholder="***">
+                                <label for="forpin" id="pinNubm">Pin</label>
+                            </div>
+                        </li>
+                    </ul><br><br>
+
+                    <div id="addDiv">
+                        <textarea name="add" id="Impo"  cols="30" rows="10"></textarea>
+                        <label for="foradd" id="Impo" >Enter Your Address</label>
+                    </div><br><br>
+                    <label for="quantity" class="q-t">Tickets : </label>
+                    <input type="number" name="quantity" id="quantity" value="0" max="20" min="0" step="1" onchange="calculateAmount(this.value)" required >
+                    <br><br>
+                    <label for="total" class="q-t">Total Price : </label>
+                    <input type="text" class="tot-amo" name="tot-amount" id="tot-amount" placeholder=" $ 0" readonly>
+                    <br>
+
+                    <button type="reset" class="btn1">Reset</button>
+                    <button type="button" class="btn2" onclick="ebuwahama()">Submit</button>
+                
+                </form>
+
+            </div> 
+
+        </div><br><br>
+
+        <!-- Popup -->
+        <div class="popup" id="popup-t">
+            <img src="../../../images/buy/product/cart-removebg-preview.png" alt="cart img">
+            <h2>THANK YOU !!</h2>
+            <p>Thanks for your purchase.<br>You can see your Invoice Details</p>
+            <hr>
+            <div class="inner">
+                <p id="inner_name"></p>
+                <p id="inner_email"></p>
+                <p id="inner_phone"></p>
+                <p id="inner_Impo"></p>
+                <br>
+                <hr width="200px">
+                <br>
+                <p id="inner_quantity"></p>
+                <p id="inner_price"></p>
+                <p id="inner_Off"></p>
+                <p id="inner_total_price"></p>
+            </div>
+
+            <button type="submit" onclick="forOk()">OK</button>
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="contact"> 
+                <br>
+                Need Help?<br>Call Us : 0113465678<br><br>
+                Our Email Address:Ceylondreamtour@gmail.com<br>
+        </div>
+        <div class="down">
+            <br>
+            <label for="email">Get updates directly to your inbox:</label>
+                <input type='email' id='email_do' placeholder="Enter you email">
+                <button type="submit" onclick="foo()">Sign Up</button>
+        </div>
+        <div class="down_link"> 
+            <br> 
+            &copy; 2022 Ceylon Dream Tour Servise.ALL RIGHTS RESERVED.<br><br>
+            <a href="../../Student pages/st1.html" class="bottom-links">Page creator&nbsp;|&nbsp;</a>
+            <a href="../../Site Map.html" class="bottom-links">Sitemap&nbsp;|&nbsp;</a>
+            <a href="#" class="bottom-links">Privacy Policy&nbsp;|&nbsp;</a>
+            <a href="#" class="bottom-links">Terms and Conditions</a>
+            <br><br>
+        </div>
+    
+
+
+        <!-- Footer JS -->
+        <script src="../../../JS/footer.js"></script>
+        <!-- For Calculations -->
+        <script src="../../../JS/Ticket.js"></script>
+    </body>
+</html>

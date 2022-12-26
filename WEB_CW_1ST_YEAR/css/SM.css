@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(../images/Site-Map/lk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#topNav1{
+    background: linear-gradient(90deg, rgba(238,247,90,1) 0%, rgba(189,190,11,1) 50%, rgba(134,140,7,1) 100%);
+}
+.topA:hover{
+    color: rgb(255, 251, 0);
+}
+#topBar{
+    margin-top: -60px;
+}
+#img-logo-quz{
+    margin-top: -30px;
+}
+
+
+#Head-Tital{
+    position: relative;
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 6px;
+    font-size: 80px;
+    font-family: 'Lobster', 'cursive';
+    font-weight: 700;
+    text-align: center;
+}
+#svg{
+    margin: 0 5%;
+    margin-bottom: 5%;
+    height: 1800px;
+}
+.all-box{
+    stroke:rgb(233, 248, 24);  
+    fill:rgb(0, 0, 0); 
+    stroke-width: 5; 
+    cursor:pointer;
+}
+#home-text{
+    font-size: 60px;
+}
+.all-text{
+    fill:rgb(208, 255, 0);
+    font-family:Arial; 
+    text-anchor:middle; 
+    cursor:pointer;
+    font-size: 20px;
+}
+.lines{
+    stroke:#e5ff00; 
+    stroke-width:7;
+}
+
+/*footer*/
+.down_link a{
+    color: rgb(255, 251, 0);
+}

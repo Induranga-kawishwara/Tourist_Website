@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.back{
+    position: relative;
+    background-image: url("../images/sing-in/tea.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 170px;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+.new_back{
+    background-image:url("../images/sing-in/regi.jpg");
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+.login_page{
+    position: fixed;
+    bottom: 20%;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.621);
+    border-radius: 20px;
+    visibility: visible;
+}
+.new_login_page{
+    visibility: hidden;
+}
+.element input{
+    position: relative;
+    height: 50px;
+    width: 90%;
+    padding-left: 15px;
+    margin-left: 5%;
+    margin-top: 20px;
+    border-radius: 30px; 
+}
+.eye-icon{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+a{
+    color: #e313d6;
+}
+#eye-icon2{
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+button{
+    position: relative;
+    background: linear-gradient(0deg, rgba(0,255,12,1) 9% ,rgba(240,255,7,1) 99%);
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 36%;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.658);
+}
+.link{
+    position: relative;
+    text-align: center;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+#butt2{
+    position: relative;
+    background: linear-gradient(0deg, rgba(34,43,195,1) 0%, rgba(212,45,253,1) 99%);
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 36%;
+    border-radius: 20px;
+    border-color: rgba(255, 255, 255, 0.658);
+
+}
+.register{
+    position: fixed;
+    bottom: 20%;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.611);
+    visibility: hidden;
+}
+.new_register{
+    visibility: visible;
+}
+ion-icon{
+    position: relative;
+    font-size: 50px;
+    padding: 0 0 0 87px;
+}
+.fb{
+    color: #0171d3;
+}
+.google{
+    color: #000000;
+}
+.pop{
+    
+    margin-bottom: 28%;
+    position: fixed;
+    width: 350px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.758);
+    border-radius: 50px;
+    visibility: hidden;
+    
+}
+.new_pop{
+    visibility: visible;
+}
+.pop img{
+    width: 150px;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.pop h2{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+
+}
+.pop span{
+    position: relative;
+    font-size: 15px;
+    left:13%;
+}
+#cen{
+    margin-left: 17px;
+}
+#cen1{
+    margin-left: 50px;
+}
+
+.pop button{
+    position: relative;
+    background: linear-gradient(0deg, rgba(34,43,195,1) 0%, rgba(212,45,253,1) 99%);
+    font-size: 16px;
+    top: -18%;
+    height: 40px;
+    width: 80px;
+}
+.pop p{
+    margin-top: 5px;
+    text-align: center;
+    color: #e41313;
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 20px 10px;
+    }
+    
+}

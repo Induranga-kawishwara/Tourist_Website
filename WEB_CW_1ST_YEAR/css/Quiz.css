@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top Nav Bar */
+#topBar{
+    top: -1px;
+}
+#topNav1{
+    background: linear-gradient(90deg, rgba(255,147,241,1) 0%, rgba(170,71,250,1) 50%, rgba(60,70,247,1) 100%);
+}
+#img-logo-quz{
+    top: -1px;
+}
+
+.topA:hover{
+    color: rgb(203, 122, 235);
+}
+
+.main {
+    background: #d7abed;
+    
+}
+
+.new_main_1 {
+
+    background: #29bd29;
+
+}
+
+.new_main_2 {
+
+    background: #dbd224;
+}
+
+.new_main_3 {
+
+    background: #e14444;
+}
+
+
+h1 {
+    
+    font-family: Lobster, cursive;
+    font-size: 100px;
+    color: PURPLE;
+    text-align: center;
+    margin-top: 15%;
+    
+}
+
+.start, .description, .quizBox, .resultBox, .answerBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.description.activeInfo,
+.quizBox.activeQuiz,
+.resultBox.activeResult,
+.answerBox.activeAnswer {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+.start button {
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            
+}
+
+.visibility {
+    visibility: hidden;
+    
+}
+
+.description {
+    position: absolute;    
+    width: 600px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1%;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+       
+}
+
+.description .descriptionTitle {
+    height: 60px;
+    border-bottom: 1px solid darkmagenta;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+.description .descriptionDetails {
+    padding: 20px 30px;
+
+}
+
+.description .descriptionDetails .details li {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.description .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid darkmagenta;
+}
+
+.description .buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid darkorchid;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttons button.exit {
+    color: blueviolet;
+}
+
+.buttons button.exit:hover {
+    color: white;
+    background: rgba(137, 43, 226, 0.679);
+}
+
+.buttons button.continue {
+    color: white;
+    background: blueviolet;
+}
+
+.description .buttons button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            
+}
+
+.quizBox {
+    
+    margin-top: 30px;
+    width: 550px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    
+}
+
+.quizBox header {
+    position: relative;
+    z-index: 99;
+    height: 100px;
+    padding: 0 30px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quizBox header .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.quizBox header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(178, 89, 242);
+    border: 1px solid rgb(71, 35, 97);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.quizBox header .timer .timerText {
+    font-weight: bold;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quizBox header .timer .seconds {
+    font-size: 18px;
+    font-weight: 500;
+    background: rgb(53, 1, 75);
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(13, 1, 18);
+    user-select: none;
+}
+
+.quizBox section {
+    height: 500px;
+    padding: 25px 30px 20px 30px;
+    background: white;
+    overflow: scroll;
+
+}
+
+.quizBox section .question {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.quizBox section .options {
+    padding: 20px 0;
+    
+}
+
+.quizBox section .options p {
+    background: rgb(240, 207, 240);
+    border: 1px solid rgb(207, 67, 207);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.quizBox section .options p:hover {
+    background-color: rgb(207, 67, 207);
+}
+
+.quizBox footer {
+    height: 60px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quizBox footer .blank {
+
+    display: flex;
+
+}
+
+.quizBox footer .submit {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    color: rgb(178, 89, 242);
+    cursor: pointer;
+}
+
+.quizBox footer .submit:hover {
+    color: white;
+    background: blueviolet;
+
+}
+
+.quizBox footer .submit:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+            
+}
+
+.resultBox {
+    margin-top: 1%;
+    height: 360px;
+    width: 450px;
+    background-color: whitesmoke;
+    border-radius: 23px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+
+}
+
+.resultBox .complete {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.resultBox .score span{
+    
+    display: flex;
+    align-items: center;
+    margin-left: 26%;
+    font-size: 18px;
+    
+}
+
+.resultBox .score p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    font-weight: bold;
+   
+}
+
+.resultBox .correctORincorrect{
+    
+    margin-top: 20px; 
+    margin-bottom: -10px;
+    text-align: center;  
+    font-size: 18px;
+        
+}
+
+.resultBox .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.resultBox .buttons button {
+    margin: 10px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgba(137, 43, 226, 0.679);
+    cursor: pointer;
+    align-items: center;
+}
+
+.resultBox .buttons button:hover {
+    color: white;
+    background: blueviolet;
+
+}
+
+
+.quizBox section .options p::after {
+    background: rgb(242, 235, 242);
+    border: 1px solid rgb(232, 178, 232);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.answerBox {
+
+    height: 400px;
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.answerBox .answers {
+     
+    padding: 25px 30px 20px 30px;  
+    
+
+}
+
+.answerBox .answers span {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+}
+
+.answerBox .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerBox .buttons button {
+    margin: 10px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgba(137, 43, 226, 0.679);
+    cursor: pointer;
+    align-items: center;
+}
+
+.answerBox .buttons button:hover {
+    color: white;
+    background: blueviolet;
+
+}
+
+
+.footer{
+    margin-top: 40%;
+}
+/*footer*/
+.down_link a{
+    color: rgb(214, 131, 247);
+}

@@ -1,0 +1,83 @@
+#for-img{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+#for-img p{
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    margin: 4% 4% 0 8%;
+}
+#for-img h1{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(197, 29, 29);
+    margin: 4% 4% 0 8%;
+}
+#for-img img{
+    width: 90%;
+    height: 55%;
+    margin: 20% 0 0 6%;
+    border: 3px solid rgb(2, 235, 252);
+    border-radius: 20px;
+}
+#for-dit #impo{
+    font-size: 15px;
+    padding: 16px;
+    font-family: sans-serif;
+    color: rgb(246, 4, 4);
+}
+#TP-types h2{
+    margin-left: -20px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#TP-types label{
+    top: -15px;
+    color: rgb(15, 23, 146);
+    font-size: 15px;
+    font-weight: 800;
+    margin-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+#cat h2{
+    margin-left: -20px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ft{
+    top: -15px;
+    color: rgb(15, 23, 146);
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+#wf{
+    margin-left: 20px;
+}
+.main-box{
+    margin: 5% 5%;
+    padding: 0;
+    height: 880px;
+    border: solid;
+    color: aqua;
+    border-radius: 20px;
+    filter: blur(0);
+}
+.new-main-box{
+    filter: blur(10px);
+}
+#main-ticket{
+    height: 700px;
+}
+#popup-t{
+    margin-top: 0;
+}

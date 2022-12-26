@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Top Nav Bar */
+#topBar{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+}
+#topNav1{
+    height: 40px;
+    background: linear-gradient(90deg, rgba(134,255,0,1) 0%, rgba(245,255,0,1) 53%, rgba(0,255,218,1) 100%);
+}
+#topUl1{
+    text-align: center;
+    margin-right: 25px;
+    list-style: none;
+}
+.topLi1{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 20px;
+}
+.topA{
+    position: relative;
+    padding: 5px 0;
+    color: black;
+    font-size: 16px;
+    font-family: 'Alfa Slab One','cursive';
+    text-decoration: none;
+}
+.topA:hover{
+    background-color: black;
+    border-radius: 15px;
+    padding: 9px 15px;
+    color: rgb(251, 255, 0);
+    transition: 0.4s;
+}
+#i1, #i2, #i3, #i4, #i5, #i6, #i60{
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 5px;
+    line-height: 40px;
+    cursor: pointer;
+}
+@media(max-width:800px){
+    .topLi1{
+        margin-right: 2px;
+        text-align: center;
+    }
+    .topLi1 #sm, #au, #bp, #si{
+        display: none;
+    }
+}
+
+/* Student Detels */
+.bacg{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 53%, rgba(70,70,70,1) 100%);
+}
+.st-det{
+    float: left;
+    padding-top: 20%;
+    width: 50%;
+}
+.st-h1-1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Lobster', 'cursive';
+    font-weight: 700;
+    font-size: 70px;
+    color: gold;
+}
+.st-h1-2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Lobster', 'cursive';
+    font-weight: 700;
+    font-size: 50px;
+    color: gold;
+}
+.st-det-vie{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 350;
+    color: rgb(206, 209, 22);
+    font-family: sans-serif;
+}
+
+/* Student img */
+.st-pic{
+    float: right;
+    width: 49%;
+    height: 98vh;
+}
+.st-img{
+    padding-left: 150px;
+    padding-top: 180px;
+    width: 350px;
+    height: 350px;
+    transform: rotate(40deg);
+}

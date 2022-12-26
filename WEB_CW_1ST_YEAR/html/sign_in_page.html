@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login and Signup Form </title>
+        <link rel="stylesheet" type="text/css" href="../css/sign_in.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="../images/lg.ico" />
+    </head>
+    <body class="back" id="back">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="main">
+            <div class="login_page" id="login_page">
+                <div class="form-content">
+                    <!--form-->
+                    <h2>Login</h2>
+                    <form>
+                        <div class="element">
+                            <input type="email" id="email1" placeholder="Email" >
+                        </div>
+
+                        <div class="element">
+                            <input type="password" id="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon' id="eye-icon"></i>
+                        </div>
+
+                        <div class="link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="button">
+                            <button type="button" id="login" onclick="logi()">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="link">
+                        <p> Don't you have an account?&nbsp;<a onclick="go_regi()">register</a></p>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <a class="fb" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fsritravel%2F" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="google" href="https://accounts.google.com/signup" target="_blank">
+                        <ion-icon name="logo-google"></ion-icon></a>
+                </div>
+
+
+            </div>
+            <!--registration form-->
+            <div class="register" id="register">
+                <div class="form-content">
+                    <h2>Registration</h2>
+                    <form>
+                        <div class="element">
+                            <input type="email" id="email2" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="element">
+                            <input type="password" id="pass2" placeholder="Create password" class="password">
+                        </div>
+
+                        <div class="element">
+                            <input type="password" id="con_pass" placeholder="Confirm password" class="password">
+                            <i class='bx bx-hide eye-icon' id="eye-icon2"></i>
+                        </div>
+
+                        <div class="button">
+                            <button type="button" id="butt2" onclick="regis()">register</button>
+                        </div>
+                    </form>
+
+                    <div class="link">
+                        <p> Already have an account?&nbsp;<a onclick="re_lo()">Login</a></p>
+                    </div>
+                </div>
+                <!--social media icons-->
+                <div class="social">
+                    <a class="fb" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fsritravel%2F" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon></a>
+                    <a class="google" href="https://accounts.google.com/signup" target="_blank">
+                        <ion-icon name="logo-google"></ion-icon></a>
+                </div>
+
+            </div>
+            <div class="pop" id="pop" >
+            <br>
+            <h2>Successfully Registered</h2><br>
+            <span>Thanks for Registering on your Web site.</span><br>
+            <hr>
+            <div id="cen">
+                 <br><span id="cen1" >Congratulation !!!</span><br><br>
+                 <span>You got a new user coupon code.</span>
+            </div>
+            <p id="inner_coupon"></p>
+            <img src="../images/sing-in/bonus.png" alt="bonus"  >
+            <button type="submit" id="pop_bu" onclick="pop()">OK</button>
+            </div>
+        </div>
+        <script src="../JS/sign_in.js"></script>
+    </body>
+</html>

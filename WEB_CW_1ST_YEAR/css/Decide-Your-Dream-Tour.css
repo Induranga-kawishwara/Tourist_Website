@@ -1,0 +1,581 @@
+/* Decide Your Dream Tour */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#Decide-Your-Dream-Tour{
+    font-family: sans-serif;
+}
+
+
+/* Top Nav Bar */
+#topNav1{
+    background: linear-gradient(90deg, rgba(15,18,198,1) 0%, rgba(0,134,255,1) 50%, rgba(10,236,223,1) 100%);
+}
+.topA:hover{
+    color: cyan;
+}
+
+/* Decide Your Dream Tour Form */
+#DYDT-h1{
+    text-align: center;
+    font-family: 'Lobster', 'cursive';
+    font-weight: 400;
+    font-size: 70px;
+    padding-top: 80px;
+    color:blue;
+}
+.new-DYDT2{
+    filter: blur(10px);
+}
+.extra-page{
+    border: 5px solid blue;
+    margin: 5%;
+    padding: 5% 10%;
+    border-radius: 20px;
+}
+
+
+/* Start And End Dates */
+.daysDiv{
+    height: 60px;
+}
+.daysDiv input{
+    width: 130px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 15px 25px;
+    margin-left: 0;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.daysDiv label{
+    position: absolute;
+    margin: 0px -160px;
+    color: rgb(15, 23, 146);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+#ED{
+    margin: 0 -155px;
+}
+/* Tuors */
+.tour-namesDiv{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 420px;
+}
+.tour-namesDiv ul{
+    text-align: left;
+}
+.tour-namesDiv li{
+    padding: 0 50px;
+}
+.tour-namesDiv h2{
+    padding: 15px 0px;
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+    text-align: left;
+}
+.tour-namesDiv p{
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 800;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+.tosDiv h2{
+    padding: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+}
+.tosDiv input{
+    size: 25px;
+}
+.tosDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+/* Pakage Ditals */
+.comadeshan-typeDiv h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+}
+.comadeshan-typeDiv input{
+    size: 5px;
+    margin-top: 20px;
+}
+.comadeshan-typeDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+/* Food Type */
+.foods-typeDiv h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.foods-typeDiv input{
+    size: 5px;
+}
+.foods-typeDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+/* Transpot Type */
+.vehe-typDiv h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+.vehe-typDiv input{
+    size: 5px;
+}
+.vehe-typDiv i{
+    font-size: 30px;
+}
+.vehe-typDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 50px;
+}
+/*  */
+#gudDiv h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 18, 90);
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+#gudDiv input{
+    size: 5px;
+}
+#gudDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 20px;
+}
+/* Menbers */
+.membersDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+}
+.membersDiv input{
+    width: 70px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Additional Details */
+#add-detDiv label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 23, 146);
+    font-size: 20px;
+    font-weight: 700;
+}
+#add-detDiv textarea{
+    margin-top: 10px;
+    width: 700px;
+    height: 100px;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Buttons */
+#btnDiv{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#submit, #next{
+    border: 2px solid blue;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#reset{
+    border: 2px solid blue;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* All Ul nad Li */
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block; 
+}
+/* Name */
+#nameDiv{
+    width: 250px;
+    height: 30px;
+    position: relative;
+    margin-top: 25px;
+}
+#nameDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nameDiv label{
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    left: 15px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    pointer-events: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*email*/
+#emailDiv{
+    width: 250px;
+    height: 30px;
+    position: relative;
+}
+#emailDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    margin: 0 60px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#emailDiv label{
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    left: 75px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    pointer-events: none;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Contact Number*/
+#contactNumDiv{
+    width: 250px;
+    height: 30px;
+    position: relative;
+    margin-top: 25px;
+}
+#contactNumDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contactNumDiv label{
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    left: 15px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Coupon Number*/
+#couponDiv{
+    width: 250px;
+    height: 30px;
+    position: relative;
+}
+#couponDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    margin: 0 60px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#couponDiv label{
+    position: absolute;
+    top: -15px;
+    left: 75px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+/*Bank Card Number*/
+#bankcardDiv{
+    width: 200px;
+    height: 30px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#bankcardDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bankcardDiv label{
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    padding: 0 5px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+/*Month and Year*/
+#CardMonthAndDateDiv{
+    width: 120px;
+    height: 30px;
+    position: relative;
+}
+#CardMonthAndDateDiv input{
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    margin: 0 50px;
+    padding: 5px 0;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#CardMonthAndDateDiv label{
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+/*Pin Number*/
+#pinDiv{
+    width: 50px;
+    height: 30px;
+    position: relative;
+}
+#pinDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    margin: 0 60px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#pinDiv label{
+    position: absolute;
+    top: -15px;
+    left: 75px;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+/* Total */
+#totDiv{
+    width: 70px;
+    height: 30px;
+    position: relative;
+    margin-bottom: 50px;
+}
+#totDiv input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(178, 178, 253);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    margin-left: 140px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#totDiv label{
+    margin-top: 10px;
+    width: 130px;
+    position: absolute;
+    color: rgb(15, 23, 146);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+}
+
+/* Popup */
+.popup{
+    width: 400px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: solid 2px blue;
+    position: absolute;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4ms;
+    filter: blur(0px);
+}
+.new_pop{
+    top: 60%;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 150px;
+    height: 150px;
+    margin: -70px;
+}
+.popup h2{
+    font-size: 30px;
+    margin: 70px;  
+}
+.popup p{
+    position: relative;
+    bottom: 10%;
+}
+.popup button{
+    margin-top: 10%;
+    margin-inline: 6px;
+    position: relative;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(
+        130deg,
+        #6de4f4,
+        #467df5
+    );
+}
+.popup hr{
+    position: relative;
+    bottom: 8%;
+}
+.inner p{
+    position: relative;
+    text-align: left;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 1px;
+}
+.inner hr{
+    left: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.down_link a{
+    color: #00eeff;
+}
