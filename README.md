@@ -28,6 +28,12 @@ To get a local copy up and running, follow these simple steps.
 
 You need a modern web browser like Google Chrome, Firefox, or Microsoft Edge.
 
+### 🌐 Live Demo
+
+A live demo of the website is available on GitHub Pages.
+
+[**View Live Demo**](https://induranga-kawishwara.github.io/Ceylon_Dream_Tour/)
+
 ### Installation
 
 1.  Clone the repository:
